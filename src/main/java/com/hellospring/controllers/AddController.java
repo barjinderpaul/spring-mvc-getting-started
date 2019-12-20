@@ -19,7 +19,7 @@ public class AddController {
         int result = AddService.add(firstNumber,secondNumber);
 
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.jsp");
+        mv.setViewName("result");
         mv.addObject("result",result);
         return mv;
     }
